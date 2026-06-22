@@ -84,7 +84,7 @@ Ensure you have the following dependencies installed:
 | [ONNX Runtime](https://onnxruntime.ai/docs/install/)                 | >=1.14.1      | Download pre-built binaries or build from source. Ensure GPU version if using CUDA.                                                                                         |
 | [OpenCV](https://opencv.org/releases/)                               | >=4.0.0       | Required for image loading and preprocessing.                                                                                                                               |
 | C++ Compiler                                                         | C++17 Support | Needed for features like `<filesystem>`. ([GCC](https://gcc.gnu.org/), [Clang](https://clang.llvm.org/), [MSVC](https://visualstudio.microsoft.com/vs/features/cplusplus/)) |
-| [CMake](https://cmake.org/download/)                                 | >=3.18        | Cross-platform build system generator. Version 3.18+ recommended for better CUDA support discovery.                                                                         |
+| [CMake](https://cmake.org/download/)                                 | >=3.5         | Cross-platform build system generator. Version 3.18+ recommended for better CUDA support discovery.                                                                         |
 | [CUDA Toolkit](https://developer.nvidia.com/cuda/toolkit) (Optional) | >=11.4, <12.0 | Required for GPU acceleration via ONNX Runtime's CUDA Execution Provider. **Must be CUDA 11.x**.                                                                            |
 | [cuDNN](https://developer.nvidia.com/cudnn) (CUDA required)          | =8.x          | Required by CUDA Execution Provider. **Must be cuDNN 8.x** compatible with your CUDA 11.x version.                                                                          |
 
@@ -136,7 +136,7 @@ Ensure you have the following dependencies installed:
     ```
 
 5.  **Locate Executable:**
-    The compiled executable (e.g., `yolov8_onnxruntime_cpp`) will be located in the `build` directory.
+    The compiled executable (e.g., `Yolov8OnnxRuntimeCPPInference`) will be located in the `build` directory.
 
 ## 🚀 Usage
 
@@ -165,7 +165,7 @@ Detector(yoloDetector);
 Run the executable from the `build` directory:
 
 ```bash
-./yolov8_onnxruntime_cpp
+./Yolov8OnnxRuntimeCPPInference
 ```
 
 ## 🤝 Contributing
